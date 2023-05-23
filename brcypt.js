@@ -2,6 +2,7 @@ const bcrypt = require('bcrypt');
 
 const password = '123456';
 
+
 // const salt = bcrypt.genSaltSync(10);
 // console.log(salt);
 const salt = '$2b$10$elDinlr0Qkf9ZnETwOjQpu';

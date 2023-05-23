@@ -16,6 +16,9 @@ app.use('/v1', v1Router);
 
 app.use(validationError);
 app.use(unknownError);
+app.get('/', (req, res) => {
+  res.sendStatus(200);
+});
 
 connectToDB().then(() => {
   app.listen(PORT, () => {
